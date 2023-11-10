@@ -43,7 +43,7 @@ def test_CNN():
             top1_error.update(single_error, images.size(0))
             top5_error.update(single5_error, images.size(0))
     print(
-        "teacher_CNN network: [top1_acc: %.4f%%] [top5_acc: %.4f%%]"
+        "CNN network: [top1_acc: %.4f%%] [top5_acc: %.4f%%]"
         % ((100.00 - top1_error.avg), (100.00 - top5_error.avg))
     )
     return top1_error.avg, top5_error.avg
