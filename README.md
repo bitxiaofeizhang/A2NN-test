@@ -17,7 +17,7 @@ How to run the test_code:
      
      链接：https://pan.baidu.com/s/13vMXwFpoJImSbwjP9BZWCQ?pwd=mvov 提取码：mvov
      
-     Put these pre-trained models into the test folder.
+     Put these pre-trained models into the test_code folder.
   3. Download UC Merced Land Use Dataset: http://weegee.vision.ucmerced.edu/datasets/landuse.html
      
      Modify the image file path in the /data_process/UC_test_0.2.txt file according to the storage location of the UC dataset.
