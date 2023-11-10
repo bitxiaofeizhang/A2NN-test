@@ -1,8 +1,8 @@
 # A2NN-test
-  The project implement the CNN, A2NN, Q-A2NN for optiacal remote sensing classification.
+  The project implement the CNN, A2NN, Q-A2NN for optical remote sensing classification.
 
     test_code: 
-      the test code for implementing the CNN, A2NN, Q-A2NN for optiacal remote sensing classification.
+      the test code for implementing the CNN, A2NN, Q-A2NN for optical remote sensing classification.
     hardware:
       adder_PE_code:
         the code of the adder kernel processing energy
