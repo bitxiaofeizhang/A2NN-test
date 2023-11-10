@@ -11,6 +11,8 @@
       vedio demo:
         demonstration of the entire process of deploying QA2NN quantized in 4bit on FPGA.
 
+***************************************************************************************
+
 How to run the test_code:
   Environment:
     
