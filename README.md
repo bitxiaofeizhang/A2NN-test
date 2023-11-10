@@ -12,22 +12,29 @@
         demonstration of the entire process of deploying QA2NN quantized in 4bit on FPGA.
 
 How to run the test_code:
-  1. You need to Compile Adder Cuda Kernal.
+  Environment:
+    
+    pytorch 1.10.0 CUDA 11.3
+  
+  You need to Compile Adder Cuda Kernal:
 
-     cd adder_cuda
+       cd adder_cuda
      
-     python setup.py install
+       python setup.py install
 
-     cd ..
+       cd ..
       
-  3. You can find the CNN, A2NN, and QA2NN versions of the vgg11 pre-trained model from the links we provide:
+  You can find the CNN, A2NN, and QA2NN versions of the vgg11 pre-trained model from the links we provide, and put these pre-trained models into the test_code folder.
      
      链接：https://pan.baidu.com/s/13vMXwFpoJImSbwjP9BZWCQ?pwd=mvov 提取码：mvov
+
+  Download UC Merced Land Use Dataset and modify the image file path in the /data_process/UC_test_0.2.txt file according to the storage location of the UC dataset.
+  
+    http://weegee.vision.ucmerced.edu/datasets/landuse.html
      
-     Put these pre-trained models into the test_code folder.
-  4. Download UC Merced Land Use Dataset: http://weegee.vision.ucmerced.edu/datasets/landuse.html
-     
-     Modify the image file path in the /data_process/UC_test_0.2.txt file according to the storage location of the UC dataset.
+ After above steps, you can run the test_code:
+
+    python test.py
      
   =>Notes: The file size of QA2NN does not reflect the real resource overhead when deploying the inference phase of the QA2NN. We additionally provide the parameter files for on-chip ROM initialization when deploying QA2NN on FPGA.
     
