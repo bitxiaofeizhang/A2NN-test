@@ -13,7 +13,8 @@
 
 ***************************************************************************************
 
-How to run the test_code:
+How to run the ./test_code:
+
   Environment:
     
     pytorch 1.10.0 CUDA 11.3
