@@ -14,9 +14,11 @@
 How to run the test_code:
   1. You need to Compile Adder Cuda Kernal.
 
-      cd adder_cuda
-      python setup.py install
-      cd ..
+     cd adder_cuda
+     
+     python setup.py install
+
+     cd ..
       
   3. You can find the CNN, A2NN, and QA2NN versions of the vgg11 pre-trained model from the links we provide:
      
