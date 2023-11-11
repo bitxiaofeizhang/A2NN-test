@@ -17,11 +17,11 @@ How to run the ./test_code:
 
   Environment:
     
-    pytorch 1.10.0 CUDA 11.3
+    torch 1.8.2 CUDA 11.1
   
   You need to Compile Adder Cuda Kernal:
 
-       cd adder_cuda
+       cd unoptimized
      
        python setup.py install
 
