@@ -17,7 +17,7 @@ How to run the ./test_code:
 
   Environment:
     
-    torch 1.8.2 CUDA 11.1
+    torch 1.10 CUDA 11.1
   
   You need to Compile Adder Cuda Kernal:
 
