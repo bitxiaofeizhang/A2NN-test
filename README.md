@@ -45,7 +45,12 @@ How to run the ./test_code:
 
          #include <THC/generic/THCTensor.h>
          #include <THC/THCGenerateBFloat16Type.h>
+     
+  3) compile the adder_cuda:
 
+         cd adder_cuda
+         python setup.py install --user 
+     
   · The second method:
   
     
