@@ -2,7 +2,7 @@
   The project implement the CNN, A2NN, Q-A2NN for optical remote sensing classification.
 
     adder_cuda:
-    
+      the cuda computing environment for the adder kernel.
     test_code: 
       the test code for implementing the CNN, A2NN, Q-A2NN for optical remote sensing classification.
     hardware:
@@ -10,7 +10,7 @@
         the code of the adder kernel processing energy
       para_rom:
         the parameter files for on-chip ROM initialization when deploying QA2NN on FPGA
-      vedio demo:
+    vedio_demo:
         demonstration of the entire process of deploying QA2NN quantized in 4bit on FPGA.
 
 ***************************************************************************************
