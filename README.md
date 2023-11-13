@@ -26,8 +26,8 @@ First of all, you need to build a cuda computing environment for the adder kerne
    (1) Environment Requirements：python 3.8, pytorch 1.8.2, CUDA 11.1
    
    (2) modify PyTorch before launch (for solving compiling issue):
-
-      Change lines:57-64 in anaconda3/lib/python3.8/site-packages/torch/include/THC/THCTensor.hpp from:
+   
+   Change lines:57-64 in anaconda3/lib/python3.8/site-packages/torch/include/THC/THCTensor.hpp from:
 
           #include <THC/generic/THCTensor.hpp>
           #include <THC/THCGenerateAllTypes.h>
@@ -38,7 +38,7 @@ First of all, you need to build a cuda computing environment for the adder kerne
           #include <THC/generic/THCTensor.hpp>
           #include <THC/THCGenerateBFloat16Type.h>
 
-      to:
+   to:
 
           #include <THC/generic/THCTensor.h>
           #include <THC/THCGenerateAllTypes.h>
