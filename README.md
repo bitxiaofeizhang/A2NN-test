@@ -7,9 +7,11 @@
       the test code for implementing the CNN, A2NN, Q-A2NN for optical remote sensing classification.
     hardware:
       adder_PE_code:
-        the code of the adder kernel processing energy
+        the code of the adder kernel processing energy.
       para_rom:
-        the parameter files for on-chip ROM initialization when deploying QA2NN on FPGA
+        the parameter files for on-chip ROM initialization when deploying QA2NN on FPGA.
+      result_count:
+        output result of deploying QA2NN quantized in 4bit on FPGA.
     vedio_demo:
         demonstration of the entire process of deploying QA2NN quantized in 4bit on FPGA.
 
@@ -71,6 +73,10 @@ First of all, you need to build a cuda computing environment for the adder kerne
  After above steps, you can run the test_code:
 
     python test.py
+
+  ***************************************************************************************
+
+  
      
   =>Notes: The file size of QA2NN does not reflect the real resource overhead when deploying the inference phase of the QA2NN. We additionally provide the parameter files for on-chip ROM initialization when deploying QA2NN on FPGA.
     
