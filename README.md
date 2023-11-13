@@ -16,9 +16,17 @@
 How to run the ./test_code:
 
   First of all, you need to build a cuda computing environment for the adder kernel. We provide two methods:
-    1、You can build the environment by youself as follow steps:
-      1) 
-    2、
+
+  · The first method:
+  
+    You can build the environment by youself as follow steps:
+      1) Environment Requirements：python 3.8, pytorch 1.8.2, CUDA 11.1
+      2) modify PyTorch before launch (for solving compiling issue):
+        
+
+  · The second method:
+  
+    
     
       
   You can find the CNN, A2NN, and QA2NN versions of the vgg11 pre-trained model from the links we provide, and put these pre-trained models into the test_code folder.
