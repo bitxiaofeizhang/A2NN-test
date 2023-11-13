@@ -15,14 +15,26 @@
 
 How to run the ./test_code:
 
-  First of all, you need to build a cuda computing environment for the adder kernel. We provide two methods:
+  1. First of all, you need to build a cuda computing environment for the adder kernel. We provide two methods:
 
   · The first method:
   
-    You can build the environment by youself as follow steps:
-      1) Environment Requirements：python 3.8, pytorch 1.8.2, CUDA 11.1
-      2) modify PyTorch before launch (for solving compiling issue):
-        F
+  You can build the environment by youself as follow steps:
+      
+  1) Environment Requirements：python 3.8, pytorch 1.8.2, CUDA 11.1
+  2) modify PyTorch before launch (for solving compiling issue):
+
+     Change lines:57-64 in anaconda3/lib/python3.8/site-packages/torch/include/THC/THCTensor.hpp from:
+
+         #include <THC/generic/THCTensor.hpp>
+         #include <THC/THCGenerateAllTypes.h>
+
+         #include <THC/generic/THCTensor.hpp>
+         #include <THC/THCGenerateBoolType.h>
+
+         #include <THC/generic/THCTensor.hpp>
+         #include <THC/THCGenerateBFloat16Type.h>
+        
 
   · The second method:
   
