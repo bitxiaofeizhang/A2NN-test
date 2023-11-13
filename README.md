@@ -34,7 +34,17 @@ How to run the ./test_code:
 
          #include <THC/generic/THCTensor.hpp>
          #include <THC/THCGenerateBFloat16Type.h>
-        
+
+     to:
+
+         #include <THC/generic/THCTensor.h>
+         #include <THC/THCGenerateAllTypes.h>
+
+         #include <THC/generic/THCTensor.h>
+         #include <THC/THCGenerateBoolType.h>
+
+         #include <THC/generic/THCTensor.h>
+         #include <THC/THCGenerateBFloat16Type.h>
 
   · The second method:
   
