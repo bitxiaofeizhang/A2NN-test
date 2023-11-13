@@ -1,6 +1,8 @@
 # A2NN-test
   The project implement the CNN, A2NN, Q-A2NN for optical remote sensing classification.
 
+    adder_cuda:
+    
     test_code: 
       the test code for implementing the CNN, A2NN, Q-A2NN for optical remote sensing classification.
     hardware:
@@ -15,7 +17,7 @@
 
 How to run the ./test_code:
 
-  1. First of all, you need to build a cuda computing environment for the adder kernel. We provide two methods:
+First of all, you need to build a cuda computing environment for the adder kernel. We provide two methods:
 
    · The first method:
   
@@ -53,14 +55,15 @@ How to run the ./test_code:
      
    · The second method:
   
+   We provide configured virtual environments. You only need to download and unzip it, and you can run the test code directly in this environment：
+   
+      链接：https://pan.baidu.com/s/1OFKVO-Q5sfJlCNCMygeUDA?pwd=co8a 提取码：co8a 
     
-    
-      
-  You can find the CNN, A2NN, and QA2NN versions of the vgg11 pre-trained model from the links we provide, and put these pre-trained models into the test_code folder.
+  Secondly, you can find the CNN, A2NN, and QA2NN versions of the vgg11 pre-trained model from the links we provide, and put these pre-trained models into the test_code folder.
      
-     链接：https://pan.baidu.com/s/13vMXwFpoJImSbwjP9BZWCQ?pwd=mvov 提取码：mvov
+     链接：https://pan.baidu.com/s/1kPuayjwvg---K6XGuJpRjw?pwd=7yqn 提取码：7yqn 
 
-  Download UC Merced Land Use Dataset and modify the image file path in the /data_process/UC_test_0.2.txt file according to the storage location of the UC dataset.
+  Thirdly, download UC Merced Land Use Dataset and modify the image file path in the /data_process/UC_test_0.2.txt file according to the storage location of the UC dataset.
   
     http://weegee.vision.ucmerced.edu/datasets/landuse.html
      
