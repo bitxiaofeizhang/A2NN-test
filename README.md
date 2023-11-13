@@ -22,7 +22,7 @@ How to run the ./test_code:
     You can build the environment by youself as follow steps:
       1) Environment Requirements：python 3.8, pytorch 1.8.2, CUDA 11.1
       2) modify PyTorch before launch (for solving compiling issue):
-        
+        F
 
   · The second method:
   
