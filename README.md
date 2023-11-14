@@ -86,7 +86,7 @@ The result of deploying QA2NN quantized in 4bit on FPGA:
 
   GPU:
 
-    链接：https://pan.baidu.com/s/1uZvTiVrFtP84uFwSx8Afrw?pwd=nb4d 提取码：nb4d 
+    链接：https://pan.baidu.com/s/1R4GZbmIDWgJ6SvXbvSJDJA?pwd=ss6j 提取码：ss6j 
     
   FPGA:
     
