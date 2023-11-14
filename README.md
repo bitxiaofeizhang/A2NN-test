@@ -81,8 +81,14 @@ The result of deploying QA2NN quantized in 4bit on FPGA:
  ****************************************************************************************
 
  For visual viewing and inspection, we provide test vedio of QA2NN while inferring on GPU and FPGA:
-   
 
+  GPU:
+
+    链接：https://pan.baidu.com/s/1uZvTiVrFtP84uFwSx8Afrw?pwd=nb4d 提取码：nb4d 
+    
+  FPGA:
+    
+    链接：https://pan.baidu.com/s/1uZvTiVrFtP84uFwSx8Afrw?pwd=nb4d 提取码：nb4d 
  *******************************************************************************************
  
  Notes: The file size of QA2NN does not reflect the real resource overhead when deploying the inference phase of the QA2NN. We additionally provide the parameter files for on-chip ROM initialization when deploying QA2NN on FPGA.
