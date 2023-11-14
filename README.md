@@ -1,8 +1,6 @@
 # A2NN-test
   The project implement the CNN, A2NN, Q-A2NN for optical remote sensing classification.
 
-    adder_cuda:
-      the cuda computing environment for the adder kernel.
     test_code: 
       the test code for implementing the CNN, A2NN, Q-A2NN for optical remote sensing classification.
     hardware:
@@ -13,7 +11,7 @@
       result_count:
         output result of deploying QA2NN quantized in 4bit on FPGA.
     vedio_demo:
-        demonstration of the entire process of deploying QA2NN quantized in 4bit on FPGA.
+        demonstration of the entire process of test_code and deploying QA2NN quantized in 4bit on FPGA.
 
 ***************************************************************************************
 
@@ -51,10 +49,7 @@ First of all, you need to build a cuda computing environment for the adder kerne
           #include <THC/generic/THCTensor.h>
           #include <THC/THCGenerateBFloat16Type.h>
 
-   (3) compile the adder_cuda:  
-
-         cd adder_cuda
-         python setup.py install --user 
+   (3) Replace the adder.py with ./adder/adder.py.
      
    · The second method:
   
@@ -76,7 +71,19 @@ First of all, you need to build a cuda computing environment for the adder kerne
 
   ***************************************************************************************
 
+The result of deploying QA2NN quantized in 4bit on FPGA:
+
+  We provid the output results on the FPGA, you can view the processing results by running the result_count.py:
+
+    cd hardware/result_count/
+    python result.count.py
   
-     
-  =>Notes: The file size of QA2NN does not reflect the real resource overhead when deploying the inference phase of the QA2NN. We additionally provide the parameter files for on-chip ROM initialization when deploying QA2NN on FPGA.
+ ****************************************************************************************
+
+ For visual viewing and inspection, we provide test vedio of QA2NN while inferring on GPU and FPGA:
+   
+
+ *******************************************************************************************
+ 
+ Notes: The file size of QA2NN does not reflect the real resource overhead when deploying the inference phase of the QA2NN. We additionally provide the parameter files for on-chip ROM initialization when deploying QA2NN on FPGA.
     
