@@ -1,8 +1,9 @@
-# A2NN-test
-  The project implement the CNN, A2NN, Q-A2NN for optical remote sensing classification.
+# A2NN-TEST
+  The project tests the A2NN and Q-A2NN for optical remote sensing classification.
 
     test_code: 
-      the test code for implementing the CNN, A2NN, Q-A2NN for optical remote sensing classification.
+      the test code for comparing the CNN, A2NN and Q-A2NN for optical remote sensing classification.
+      
     hardware:
       adder_PE_code:
         the code of the adder kernel processing energy.
@@ -10,6 +11,7 @@
         the parameter files for on-chip ROM initialization when deploying QA2NN on FPGA.
       result_count:
         output result of deploying QA2NN quantized in 4bit on FPGA.
+        
     vedio_demo:
         demonstration of the entire process of test_code and deploying QA2NN quantized in 4bit on FPGA.
 
@@ -20,6 +22,12 @@ How to run the ./test_code:
 First of all, you need to build a cuda computing environment for the adder kernel. We provide two methods:
 
    · The first method:
+
+   We provide configured virtual environments. You only need to download and unzip it, and you can run the test code directly in this environment：
+   
+      链接：https://pan.baidu.com/s/1OFKVO-Q5sfJlCNCMygeUDA?pwd=co8a 提取码：co8a 
+
+   · The second method:    
   
    You can build the environment by youself as follow steps:
       
@@ -50,22 +58,16 @@ First of all, you need to build a cuda computing environment for the adder kerne
           #include <THC/THCGenerateBFloat16Type.h>
 
    (3) Replace the adder.py with ./adder/adder.py.
-     
-   · The second method:
-  
-   We provide configured virtual environments. You only need to download and unzip it, and you can run the test code directly in this environment：
-   
-      链接：https://pan.baidu.com/s/1OFKVO-Q5sfJlCNCMygeUDA?pwd=co8a 提取码：co8a 
     
-  Secondly, you can find the CNN, A2NN, and QA2NN versions of the vgg11 pre-trained model from the links we provide, and put these pre-trained models into the test_code folder.
+Secondly, you can find the CNN, A2NN, and QA2NN versions of the vgg11 pre-trained model from the links we provide, and put these pre-trained models into the test_code folder.
      
      链接：https://pan.baidu.com/s/1kPuayjwvg---K6XGuJpRjw?pwd=7yqn 提取码：7yqn 
 
-  Thirdly, download UC Merced Land Use Dataset and modify the image file path in the /data_process/UC_test_0.2.txt file according to the storage location of the UC dataset.
+Thirdly, download UC Merced Land Use Dataset and modify the image file path in the /data_process/UC_test_0.2.txt file according to the storage location of the UC dataset.
   
     http://weegee.vision.ucmerced.edu/datasets/landuse.html
      
- After above steps, you can run the test_code:
+After above steps, you can run the test_code:
 
     python test.py
 
